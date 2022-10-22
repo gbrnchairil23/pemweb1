@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+</head>
+<body>
+   <h2>Black Goose Bitro | Pizza-on-Demand</h2>
+   <p>Our 12" wood-fired pizzas are available for delivery. <br>Build your custom pizza and we'll delivery it within an hour.</p>
+   <hr>
+   <form action="file:///C:/xampp/htdocs/pemweb1/week3/thanks.html">
+    <table>
+        <!-- Buka thead -->
+        <thead>
+            <tr>
+                <th colspan="0"><h3>Your Information</h3></th>
+            </tr>
+        </thead>
+        <!-- Tutup thead -->
+        <tbody>
+            <tr>
+                <td><label for="">Name</label></td>
+                <td>: <input type="text" name="nama"</td>
+            </tr>
+            <tr>
+                <td><label for="">Address</label></td>
+                <td>: <input type="text" name="address"</td>
+            </tr>
+            <tr>
+                <td><label for="">No. HP</label></td>
+                <td>: <input type="number" name="Hp"</td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label></td>
+                <td>: <input type="email" name="email"</td>
+            </tr>
+            <tr>
+                <td><label for="">Delivery Instruction</label></td>
+                <td>: <textarea name="deskripsi" id="" type="text"></textarea></td>
+            </tr>
+        </tbody>
+        <!-- Tutup tbody -->
+    </table>
+    <br>
+    <!-- Tutup table -->
+    <!-- Buka Fieldset-->
+    <fieldset>
+        <legend><b>Design Your Dream Pizza</b></legend>
+        <h4>Crust (Choose one) :</h4>
+        <ul style="list-style: none;">
+            <li>
+                <input type="radio" id="white" name="Crust">
+                <label for="">Classic White</label>
+            </li>
+            <li>
+                <input type="radio" id="white" name="Crust">
+                <label for="">Multigrain</label>
+            </li>
+            <li>
+                <input type="radio" id="white" name="Crust">
+                <label for="">Una Melt</label>
+            </li>
+            <li>
+                <input type="radio" id="white" name="Crust">
+                <label for="">Gulten-free</label>
+            </li>
+        </ul>
+        <h4>Toppings (Choose as many as you want) :</h4>
+        <ul style="list-style: none;">
+            <li>
+                <input type="checkbox" id="white" name="Crust">
+                <label for="">With Sauce</label>
+            </li>
+            <li>
+                <input type="checkbox" id="white" name="Crust">
+                <label for="">Mozarella Cheese</label>
+            </li>
+            <li>
+                <input type="checkbox" id="white" name="Crust">
+                <label for="">Mushrooms</label>
+            </li>
+            <li>
+                <input type="checkbox" id="white" name="Crust">
+                <label for="">Peppers</label>
+            </li>
+        </ul>
+
+        <h4>Number</h4>
+        <label for="">How Many Pizza : </label>
+        <input type="number" id="jumlah"> <br><br>
+        <input type="submit" name="proses" value="Kirim">
+        <input type="reset" name="unproses" value="Batal">
+    </fieldset>
+   </form>
+   <!-- Tutup form -->
+</body>
+</html>

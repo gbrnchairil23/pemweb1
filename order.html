@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemesanan Barang</title>
+  </head>
+  <body style="font-family: Arial, Helvetica, sans-serif; background: rgb(255, 255, 255)">
+    <table align="center" style="background-color: rgb(255, 111, 0); margin-top: 15px; margin-bottom: 15px; border: 1px solid">
+      <tr>
+        <img src="image/xiaomi.png" width="60" alt="Apple" style="padding: 16px; float: left" />
+        <td style="border-right: 1px solid; padding: 0 80px">Beranda</td>
+        <td style="border-right: 1px solid; padding: 0 80px">Produk</td>
+        <td style="border-right: 1px solid; padding: 0 80px">Riwayat</td>
+        <td style="border-right: 1px solid; padding: 0 80px">Keranjang</td>
+        <td style="padding: 0 80px">Logout</td>
+      </tr>
+    </table>
+
+    <form action="file:///C:/xampp/htdocs/pemweb1/week3/payment.html?pemegang+akun=&no+akun=&nomor+telepon=&email=#" method="get">
+      <table align="center" cellpadding="10" style="width: 980px">
+        <tbody>
+          <tr>
+            <td rowspan="9" width="270">
+              <img src="image/xiaomi 12 pro.jpg" width="270" alt="ini photo" style="border: 2px solid #000" /> <br />
+              <button style="background-color: #fff; color: #000; padding: 3px 15px; border: 2px solid #000; border-radius: 1px; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.4) 2.5px 2.5px 2.6px; margin-bottom: 225px">
+              </button>
+            </td>
+            <td width="160px">Nama Barang </td>
+            <td><input type="text" placeholder="Xiaomi 12 Pro" /></td>
+          </tr>
+          <tr>
+            <td>Deskripsi </td>
+            <td><textarea name="deskripsi" cols="30" rows="5"></textarea></td>
+          </tr>
+          <tr>
+            <td>Nomor Akun </td>
+            <td><input type="number" name="nomor akun" /></td>
+          </tr>
+          <tr>
+            <td>Bank </td>
+            <td>
+              <select>
+                <option>BRI</option>
+                <option>BCA</option>
+                <option>Mandiri</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Pemegang Akun </td>
+            <td><input type="text" name="pemegang akun" placeholder="" /></td>
+          </tr>
+          <tr>
+            <td>Jumlah </td>
+            <td>
+              <input type="number" name="transaksi" min="0" max="10" placeholder="0" /> <br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>No. Telepon</td>
+            <td><input type="number" name="nomor telepon" /></td>
+          </tr>
+          <tr>
+            <td>Alamat Email </td>
+            <td><input type="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input
+                type="submit"
+                style="background-color: #009d0e; color: white; font-weight: bold; padding: 3px 15px; border: 2px solid #000; border-radius: 1px; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.4) 2.5px 2.5px 2.6px"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
