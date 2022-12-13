@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi</title>
+    <style>
+      body{
+          margin-top: 150px;
+          margin-right: 500px;
+          margin-left: 500px;
+      }
+  </style>
+</head>
+<body>
+  <fieldset>
+    <legend>Pemesanan Tiket</legend>
+    <form id="form">
+        <label for="nama">Nama Pelanggan:</label>
+        <input type="text" id="nama" maxlength="30" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" required>
+        <br>
+        <br>
+        <label for="jam">Jam Keberangkatan:</label>
+        <br>
+        <input type="time" id="jam" required>
+        <br>
+        <br>
+        <label for="tujuan">Tujuan Keberangkatan:</label>
+        <br>
+        <input type="text" id="tujuan" required>
+        <br>
+        <br>
+        <label for="jumlah">Jumlah Tiket:</label>
+        <br>
+        <input type="number" id="jumlah" min="1" max="10" required>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </fieldset>
+      <script>
+        function validate() {
+  // Dapatkan referensi ke elemen form dan field yang akan diverifikasi
+  var form = document.getElementById('form');
+  var nama = document.getElementById('nama');
+  var email = document.getElementById('email');
+  var jam = document.getElementById('jam');
+  var tujuan = document.getElementById('tujuan');
+  var jumlah = document.getElementById('jumlah');
+        }
+
+  // Reset error message dan warna field
+  nama.setCustomValidity('');
+  nama.style.borderColor = '';
+  email.setCustomValidity('');
+  email.style.borderColor = '';
+  jam.setCustomValidity('');
+  jam.style.borderColor = '';
+  tujuan.setCustomValidity('');
+  tujuan.style.borderColor = '';
+  jumlah.setCustomValidity('');
+  jumlah.style.borderColor = '';
+
+  // Validasi nama pelanggan
+  if (nama.value == '') {
+    nama.setCustomValidity('Nama pelanggan harus diisi');
+    nama.style.borderColor = 'red';
+  } else if (nama.value.length > 30) {
+    nama.setCustomValidity('Nama pelanggan maksimal 30 karakter');
+    nama.style.borderColor = 'red';
+  }
+
+  // Validasi email
+  if (email.value == '') {
+    email.setCustomValidity('Email harus diisi');
+    email.style.borderColor = 'red';
+  } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.value)) {
+    email.setCustomValidity('Email tidak valid');
+    email.style.borderColor = 'red';
+  }
+
+  // Validasi jam keberangkatan
+  if (jam.value == '') {
+    jam.setCustomValidity('Jam keberangkatan harus diisi');
+    jam.style.borderColor = 'red';
+  } 
+  else if (!/^([01]\d|2[0-3]):([0-5]\d)$/.test(jam.value)) {
+    jam.setCustomValidity('Jam keberangkatan')
+  }
+      </script>
+      
+</body>
+</html>
